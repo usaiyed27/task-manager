@@ -1,0 +1,127 @@
+#wrapper{
+  margin: 50px auto;
+  background-color: #32292f;
+  color: #fff;
+  border-radius: 0px 50px!important;
+  width: 95%;
+}
+
+h2{
+  font-family: 'Kelly Slab', cursive;
+  font-size: 45px;
+}
+
+.member-col > h3 {
+    padding: 5px 15px;
+    background-color: #ccc;
+    margin-bottom: 35px!important;
+    color: #000;
+    font-family: 'Kelly Slab', 'cursive';
+    font-size: 22px;
+    text-align: center;
+}
+
+#taskInput{
+  font-family: 'Lobster', 'cursive';
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+#addItem{
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Lobster';
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #32292f;
+  }
+
+#addItem:hover{
+  cursor: pointer!important;
+}
+
+#selectTeamMember {
+  padding: 10.5px 25px!important;
+  font-family: 'Kelly Slab', 'cursive';
+  margin-right: 5px;
+}
+
+ul{
+    padding-left: 0px!important;
+}
+
+li.list-group-item{
+  color: #32292f;
+  font-size: 20px;
+  font-family: 'Lobster', 'cursive';
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #32292f;
+  text-transform: capitalize;
+  display: none;
+}
+
+.list-group-item > span{
+  display: block;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
+li button{
+    font-size: 16px;
+    font-family: 'montserrat';
+    background-color: #32292f;
+    border: 1px solid #32292f;
+    border-radius: 10px!important;
+    color: #fff;
+    padding: 10px;
+    margin-left: 12px;
+    letter-spacing: 1px;
+}
+
+li .fa-times-circle{
+  margin-right: 0px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.fa-times-circle::before{
+  font-size: 28px;
+  cursor: pointer;
+}
+
+li i{
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+#reassign {
+  padding: 8px 25px!important;
+  font-family: 'Kelly Slab', 'cursive';
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+ul:empty::after{
+  content: "All Done!";
+  color: #fff;
+  font-family: 'Lobster', 'cursive';
+  letter-spacing: 1px;
+  font-size: 30px;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: center!important;
+}
+
+ul:empty::before {
+  content: '\f058';
+  color: #fff;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 50px;
+  display: flex;
+  justify-content: center!important;
+}
