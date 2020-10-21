@@ -1,13 +1,17 @@
+$myColor : #32292f;
+$kellyFont : 'Kelly Slab', 'cursive';
+$lobsterFont : 'Lobster', 'cursive';
+
 #wrapper{
   margin: 50px auto;
-  background-color: #32292f;
+  background-color: $myColor;
   color: #fff;
   border-radius: 0px 50px!important;
   width: 95%;
 }
 
 h2{
-  font-family: 'Kelly Slab', cursive;
+  font-family: $kellyFont;
   font-size: 45px;
 }
 
@@ -16,13 +20,13 @@ h2{
     background-color: #ccc;
     margin-bottom: 35px!important;
     color: #000;
-    font-family: 'Kelly Slab', 'cursive';
+    font-family: $kellyFont;
     font-size: 22px;
     text-align: center;
 }
 
 #taskInput{
-  font-family: 'Lobster', 'cursive';
+  font-family: $lobsterFont;
   font-size: 22px;
   letter-spacing: 1px;
   font-weight: 500;
@@ -32,10 +36,10 @@ h2{
     padding: 8px 20px;
     border: none;
     border-radius: 5px;
-    font-family: 'Lobster';
+    font-family: $lobsterFont;
     font-size: 22px;
     letter-spacing: 1px;
-    color: #32292f;
+    color: $myColor;
   }
 
 #addItem:hover{
@@ -44,7 +48,7 @@ h2{
 
 #selectTeamMember {
   padding: 10.5px 25px!important;
-  font-family: 'Kelly Slab', 'cursive';
+  font-family: $kellyFont;
   margin-right: 5px;
 }
 
@@ -55,7 +59,7 @@ ul{
 li.list-group-item{
   color: #32292f;
   font-size: 20px;
-  font-family: 'Lobster', 'cursive';
+  font-family: $lobsterFont;
   letter-spacing: 1px;
   margin-bottom: 0;
   border-bottom: 1px solid #32292f;
@@ -72,7 +76,7 @@ li.list-group-item{
 li button{
     font-size: 16px;
     font-family: 'montserrat';
-    background-color: #32292f;
+    background-color: $myColor;
     border: 1px solid #32292f;
     border-radius: 10px!important;
     color: #fff;
@@ -100,7 +104,7 @@ li i{
 
 #reassign {
   padding: 8px 25px!important;
-  font-family: 'Kelly Slab', 'cursive';
+  font-family: $kellyFont;
   margin-right: 5px;
   font-size: 18px;
 }
@@ -108,7 +112,7 @@ li i{
 ul:empty::after{
   content: "All Done!";
   color: #fff;
-  font-family: 'Lobster', 'cursive';
+  font-family: $lobsterFont;
   letter-spacing: 1px;
   font-size: 30px;
   padding: 10px 25px;
