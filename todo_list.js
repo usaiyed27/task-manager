@@ -1,7 +1,7 @@
 var createTask;
 var addItemButton = document.getElementById('addItem');
 var teamMember = document.getElementsByClassName('team');
-var counter = 0
+var counter = 0;
 
 /*** Create Individual Task Container ***/
 function createTaskContainer(){
