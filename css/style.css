@@ -100,7 +100,7 @@ ul:empty::after {
   display: flex;
   justify-content: center !important; }
 
-ul:empty::before {
+/*ul:empty::before {
   content: '\f058';
   color: #fff;
   font-family: 'Font Awesome 5 Free';
@@ -108,3 +108,4 @@ ul:empty::before {
   font-size: 50px;
   display: flex;
   justify-content: center !important; }
+*/
