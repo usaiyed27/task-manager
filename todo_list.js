@@ -93,6 +93,7 @@ function addDropdownToTask(){
 function reassignTask(){
   var li = document.getElementsByTagName('li');
   var teamMember = document.getElementsByClassName('team');
+  console.log(teamMember);
 
   for (let j=0; j< teamMember.length; j++ ){
       for (let i=0; i< li.length; i++){
