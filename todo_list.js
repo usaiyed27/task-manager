@@ -11,7 +11,7 @@ function createTaskContainer(){
     createTask.id = 'task-' + counter;
     var taskTitle = document.createElement('span');
     icon = document.createElement('I');
-    icon.setAttribute('class', 'fas fa-arrow-circle-right')
+    // icon.setAttribute('class', 'fas fa-arrow-circle-right')
     taskTitle.appendChild(icon);
     var text = document.createTextNode(taskInput.value);
     taskTitle.appendChild(text);
@@ -60,11 +60,9 @@ function addReassignButton(){
   //console.log(reassignButton);
 
   reassignButton.onclick = function(){
-    //console.log('1');
     for (let i=0; i< li.length; i++ ){
       console.log(li[i]);
       if (li[i].id === this.parentNode.id){
-        //console.log(li[i].id);
         //console.log(reassignButton.parentNode.id);
         reassignTask();
       }
