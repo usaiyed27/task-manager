@@ -28,9 +28,9 @@ function addItemToList(){
   var input = document.getElementById('taskInput');
   if(input.value != ''){
   var selectMember=document.getElementById("selectTeamMember").value;
+  console.log(selectMember)
     for (let i=0; i< teamMember.length; i++ ){
       if (selectMember === teamMember[i].id){
-        selectMember.value;
         createTaskContainer();
         document.getElementById(teamMember[i].id).appendChild(createTask);
       }
@@ -61,7 +61,6 @@ function addReassignButton(){
 
   reassignButton.onclick = function(){
     for (let i=0; i< li.length; i++ ){
-      console.log(li[i]);
       if (li[i].id === this.parentNode.id){
         //console.log(reassignButton.parentNode.id);
         reassignTask();
@@ -73,7 +72,8 @@ function addReassignButton(){
 /***Add Reassign Select Dropdown to Task***/
 function addDropdownToTask(){
   var array = ["Eileen","John","Sara","Urusa"];
-
+  var selectMember=document.getElementById("selectTeamMember").value;
+  console.log(selectMember)
   //Create and append select list
   var selectList = document.createElement("select");
   selectList.id = "reassign";
@@ -85,6 +85,7 @@ function addDropdownToTask(){
       option.text = array[i];
       selectList.appendChild(option);
   }
+  console.log(selectList)
 }
 
 /***Reassign Task***/
@@ -98,6 +99,7 @@ function reassignTask(){
         var reassignToDropdown = li[j].childNodes[2].value;
         console.log(li[j].childNodes[2].value)
         if (reassignToDropdown === teamMember[i].id){
+          console.log('Dropdown' + reassignToDropdown, 'Member' + teamMember[i].id)
           document.getElementById(teamMember[i].id).appendChild(li[j]);
         }
       }
